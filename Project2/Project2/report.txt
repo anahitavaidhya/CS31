@@ -1,0 +1,40 @@
+A file named report.docx (in Microsoft Word format) or report.txt (an ordinary text file) that contains:
+   1. A brief description of notable obstacles you overcame. (In Project 1, for example, some people had the problem of figuring out how to work with more than one version of a program in Visual C++.)
+      A. A notable obstacle I overcame for Project 2 had to do with how to interpret adding the fines in each range. The logic on how to subtract from what number was the hardest to figure out and it took a lot of trial and error. After a while, I realized each range of numbers was being taxed and then added to the tax on the next range of numbers. 
+   2. A list of the test data that could be used to thoroughly test your program, along with the reason for each test. You don't have to include the results of the tests, but you must note which test cases your program does not handle in the way this spec requires. (This could happen if you didn't have time to write a complete solution, or if you ran out of time while still debugging a supposedly complete solution.) For Project 1, for example, such a list, had it been required, might have started off like this:
+   3. Less than 60 range
+      1. Overstated: 50 (worked)
+      2. Location: california
+   4. Exactly 60 
+      1. Overstated: 60 (worked)
+      2. Location: california
+   5. Greater than 60 range for Florida, New York, and third location
+      1. Overstated: 65 (worked)
+      2. Location: florida
+      3. Overstated: 75 (worked)
+      4. Location: new york
+      5. Overstated: 85 (worked)
+      6. Location: california
+   6. Exactly 150 for Florida, New York, and third location
+      1. Overstated: 150 (worked)
+      2. Location: florida
+      3. Overstated: 150 (worked)
+      4. Location: new york
+      5. Overstated: 150 (worked)
+      6. Location: california 
+   7. Greater than 150 for Florida, New York, and third location
+      1. Overstated: 165 (worked)
+      2. Location: florida
+      3. Overstated: 175 (worked)
+      4. Location: new york
+      5. Overstated: 185 (worked)
+      6. Location: california 
+   8. Checking outputs
+      1. Identification: empty (worked)
+      2. Overstated: negative (worked)
+      3. Overstated: 0 (worked)
+      4. Location: empty (worked)
+   9. Nonsensical 
+      1. Identification: 75 (worked)
+      2. Overstated: 12394839201 
+      3. Location: 82892 

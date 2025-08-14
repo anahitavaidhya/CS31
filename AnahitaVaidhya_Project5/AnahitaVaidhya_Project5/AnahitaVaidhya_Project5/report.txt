@@ -1,0 +1,234 @@
+1a.) I had a really difficult time with this project. I did everything that Prof. Smallberg suggests:  started early, went to office hours consistently, worked with friends, wrote out my logic on paper first and worked in small chunks starting with easy test cases and working my way up to harder test cases. However, even after all of that, I was not able to put out the best version of my code and I am disappointed in how it turned out. I did my absolute best I could and I know that it doesn’t cover all the test cases but I just wanted to let you know I put my all into this project. However, I am proud of certain things I’ve learned in the past 6 weeks like writing down my logic beforehand, being able to solve problems I couldn’t before, and coming up with logic I would never have before this class and these challenging projects. Also, when I use outf, the code doesn’t show up on my compiler or in my files, but when I use cout it does. 
+1b.) Pseudocode:
+Function render(lineLength, inf, outf):
+    Set MAX to 181
+    Set remaining to lineLength
+    Set tokenLength
+    Set retVal to 0
+    Set muchLeft
+    Set isHyphen to false
+    Set first to true
+    Set firstAfter to false
+    Set punc to false
+
+
+    // If the desired maximum length is less than 1, return an error code 2
+    If lineLength < 1:
+        Return 2
+
+
+    // Process each line in the input
+    While inf.getline(line, MAX):
+        Set delimiters to " \f\n\r\t\v"
+        Set nonWhitespace to line
+
+
+        // Skip leading whitespace characters
+        While nonWhitespace is not empty and nonWhitespace[0] is in delimiters:
+            Move to the next character in nonWhitespace
+
+
+        // Tokenize the line using strtok
+        Set token to strtok(nonWhitespace, delimiters)
+
+
+        // Process each word in the line
+        While token is not null:
+            // Calculate the length of the current token
+            Set tokenLength to length of token
+
+
+            // Handle NULL token
+            If token is null:
+                Break from the loop
+
+
+            // Check for punctuation in the token
+            If token contains '.', '?', '!', or ':':
+                Set punc to true
+
+
+            // Handle paragraph break (@P@)
+            If token is equal to "@P@":
+                If not the first paragraph:
+                    Write an empty line to the output // Separate paragraphs
+                Set first to true
+                Set remaining to lineLength
+
+
+            // Check for hyphen in the token
+            If token contains '-':
+                Set isHyphen to true
+
+
+            // Handle punctuation cases
+            If punc:
+                If it's the first word and the token fits in the line:
+                    Write the token to the output
+                    Update the remaining characters on the line
+                    Set first to false
+                    Set firstAfter to true
+                ElseIf it's the first word and the token is longer than the line:
+                    If the token length is a multiple of lineLength:
+                        Set first to true
+                        Set firstAfter to false
+                    Else:
+                        Set first to false
+                        Set firstAfter to true
+                        Set punc to false
+
+
+                    // Wrap the token to the next line
+                    While tokenLength is greater than lineLength:
+                        Write a segment of the token to the output
+                        Update the remaining characters on the line
+                        Move to the next segment of the token
+                        Adjust the token length
+
+
+                    Write the remaining segment of the token to the output
+                    Update the remaining characters on the line
+                    Set retVal to 1
+                ElseIf (tokenLength + 2 < remaining) or (tokenLength + 1 < remaining):
+                    If it's the first word and not the first after punctuation:
+                        Write the token to the output
+                        Set first to false
+                        Set firstAfter to false
+                        Set punc to false
+                        Update the remaining characters on the line
+                    ElseIf not the first word and it's the first after punctuation:
+                        Write two spaces followed by the token to the output
+                        Set first to false
+                        Set firstAfter to false
+                        Set punc to false
+                        Update the remaining characters on the line
+                    Else:
+                        Write a space followed by the token to the output
+                        Set first to false
+                        Set firstAfter to true
+                        Set punc to true
+                        Update the remaining characters on the line
+                ElseIf tokenLength + 1 equals remaining:
+                    If it's the first word and not the first after punctuation:
+                        Write the token followed by a new line to the output
+                        Set first to false
+                        Set firstAfter to false
+                        Set punc to false
+                        Update the remaining characters on the line
+                    Else:
+                        Write a space followed by the token followed by a new line to the output
+                        Set first to true
+                        Set firstAfter to false
+                        Set punc to false
+                        Update the remaining characters on the line
+                ElseIf not the first word and it's the first after punctuation and tokenLength + 2 equals remaining:
+                    Write two spaces followed by the token followed by a new line to the output
+                    Set first to true
+                    Set firstAfter to false
+                    Set punc to false
+                    Update the remaining characters on the line
+                ElseIf tokenLength is greater than lineLength:
+                    // Wrap the token to the next line
+                    While tokenLength is greater than lineLength:
+                        Write a segment of the token to the output
+                        Move to the next segment of the token
+                        Adjust the token length
+
+
+                    Write the remaining segment of the token to the output
+                ElseIf (tokenLength + 1 > remaining):
+                    // Start a new line for the token
+                    If it's the first word:
+                        Write a new line followed by the token to the output
+                        Set first to false
+                        Update the remaining characters on the line
+                    Else:
+                        Write a new line followed by the token to the output
+                        Update the remaining characters on the line
+                        Set firstAfter to true
+                        Set punc to true
+                        Set first to false
+
+
+            // Handle cases without punctuation
+            Else:
+                If it's the first word and the token fits in the line:
+                    Write the token to the output
+                    Update the remaining characters on the line
+                    Set first to false
+                ElseIf it's the first word and the token is longer than the line:
+                    If the token length is a multiple of lineLength:
+                        Set first to true
+                    Else:
+                        Set first to false
+
+
+                    // Wrap the token to the next line
+                    While tokenLength is greater than lineLength:
+                        Write a segment of the token to the output
+                        Update the remaining characters on the line
+                        Move to the next segment of the token
+                        Adjust the token length
+
+
+                    Write the remaining segment of the token to the output
+                    Set retVal to 1
+                    Update the remaining characters on the line
+                ElseIf a space and the token length can fit in the remaining characters:
+                    Write a space followed by the token to the output
+                    Update the remaining characters on the line
+                ElseIf a space and the token length equals the remaining characters:
+                    Write a space followed by the token followed by a new line to the output
+                    Set first to true
+                    Update the remaining characters on the line
+                ElseIf a space and the token length is greater than the remaining characters:
+                    // Wrap the token to the next line
+                    While tokenLength is greater than lineLength:
+                        Write a segment of the token to the output
+                        Move to the next segment of the token
+                        Adjust the token length
+
+
+                    Write the remaining segment of the token to the output
+                    Set retVal to 1
+                    Update the remaining characters on the line
+                ElseIf a space and the token length + 1 is greater than the remaining characters:
+                    // Start a new line for the token
+                    Write a new line followed by the token to the output
+                    Set first to false
+                    Update the remaining characters on the line
+
+
+            // Get the next token
+            Move to the next token using strtok
+
+
+        // Check for end of file
+        If inf.eof():
+            Write a new line to the output
+
+
+    // Return the result
+    Return retVal
+
+
+1c.)
+// Test Case 1: Basic test with no special conditions
+    runTest(10, "This is a simple test.", "This is a\nsimple\ntest.\n");
+// Test Case 2: Test with a paragraph break (@P@)
+    runTest(15, "This is a paragraph.@P@Another paragraph.", "This is a\nparagraph.\n\nAnother\nparagraph.\n");
+// Test Case 3: Test with hyphenation
+    runTest(5, "Hyphenation should be han-dled prop-erly.", "Hyphen-\nation\nshould\nbe\nhan-\ndled\nprop-\nerly.\n");
+// Test Case 4: Test with punctuation and wrapping
+    runTest(12, "This sentence has punctuation, and it needs to wrap around properly!", "This sentence\nhas punctua-\ntion, and it\nneeds to wrap\naround\nproperly!\n");
+// Test Case 5: Test with a word longer than lineLength
+    runTest(5, "Longword", "Longw\nord\n");
+// Test Case 6: Test with an empty input
+    runTest(10, "", "\n");
+// Test Case 7: Test with lineLength less than 1
+    runTest(0, "Invalid test.", "", 2);
+
+
+* My code might bug out with @P@
+* The hyphens work with basic test cases
+* Wrapping might be a little off due to remaining being off

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "83C10AE3-B724-46EE-A354-057DE33ED8DF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEEB3D87-B6AB-4133-835C-22E1A323557C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project7/toot.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "Tooter::move()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AEEB3D87-B6AB-4133-835C-22E1A323557C - a87fe43849ac2f6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tooter::move()"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anahitavaidhya/Desktop/UCLA/CS31/AnahitaVaidhya_Project7/Project7/Project7/toot.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "194"
+                  endingLineNumber = "194"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "AEEB3D87-B6AB-4133-835C-22E1A323557C - a87fe43849ac2fd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tooter::move()"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anahitavaidhya/Desktop/UCLA/CS31/AnahitaVaidhya_Project7/Project7/Project7/toot.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F39FF1F5-20B6-47DF-BC08-F884027F75E9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project7/toot.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
+            landmarkName = "City::determineNewPosition(r, c, dir)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4879D2A2-E3DB-4AAB-8DB6-64C5C227F22C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project7/toot.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
+            landmarkName = "City::nTootersAt(r, c)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4879D2A2-E3DB-4AAB-8DB6-64C5C227F22C - 7cf81996d8100467"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "City::nTootersAt(int, int) const"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anahitavaidhya/Desktop/UCLA/CS31/AnahitaVaidhya_Project7/Project7/Project7/toot.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "361"
+                  endingLineNumber = "361"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "4879D2A2-E3DB-4AAB-8DB6-64C5C227F22C - 7cf81996d8100786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "City::nTootersAt(int, int) const"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anahitavaidhya/Desktop/UCLA/CS31/AnahitaVaidhya_Project7/Project7/Project7/toot.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "360"
+                  endingLineNumber = "360"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FF9FC22E-5B93-4B68-BB68-9EB464C67F0A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C3739B3-54BD-4F70-B09C-6269EEA1F35A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnahitaVaidhya_Project4/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "locationOfMax(a, n)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "5C3739B3-54BD-4F70-B09C-6269EEA1F35A - 155fcffa7fdde400"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "locationOfMax(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const*, int)"
+                  moduleName = "AnahitaVaidhya_Project4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anahitavaidhya/Desktop/UCLA/CS31/AnahitaVaidhya_Project4/AnahitaVaidhya_Project4/AnahitaVaidhya_Project4/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "648">
+               </Location>
+               <Location
+                  uuid = "5C3739B3-54BD-4F70-B09C-6269EEA1F35A - 155fcffa7fdde400"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "locationOfMax(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const*, int)"
+                  moduleName = "AnahitaVaidhya_Project4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anahitavaidhya/Desktop/UCLA/CS31/AnahitaVaidhya_Project4/AnahitaVaidhya_Project4/AnahitaVaidhya_Project4/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "5C3739B3-54BD-4F70-B09C-6269EEA1F35A - 155fcffa7fdde400"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "locationOfMax(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const*, int)"
+                  moduleName = "AnahitaVaidhya_Project4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anahitavaidhya/Desktop/UCLA/CS31/AnahitaVaidhya_Project4/AnahitaVaidhya_Project4/AnahitaVaidhya_Project4/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
